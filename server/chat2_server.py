@@ -135,7 +135,7 @@ class Master_Server(object):
                     self.users[nick]['obj'].privMSG(source, target, message)
         else:
             if self.users[target]['receiving']:
-                self.users[to_who]['obj'].privMSG(source, target, message)
+                self.users[target]['obj'].privMSG(source, target, message)
 
     def user_who_is(self, nick):
         sel = self.users[nick]
