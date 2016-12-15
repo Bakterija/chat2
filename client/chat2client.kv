@@ -58,26 +58,26 @@
 	scroll_wheel_distance: dp(114)
         do_scroll_x: False
         do_scroll_y: True
-		bar_color: 0.15, 0.3, 0.6, 1
-		bar_inactive_color: 0.15, 0.3, 0.6, 0.4
-		bar_width: dp(10)
-		viewclass: 'RV_Label'
-		data: []
-		canvas.before:
-			Color:
-				rgba: 0.06, 0.06, 0.08, 1
-			Rectangle:
-				size: self.size
-				pos: self.pos
-		RecycleBoxLayout22:
-			id: rv_box
-			orientation: 'vertical'
-			size_hint: None, None
-			height: self.minimum_height
-			width: self.parent.width
-			default_size: None, cm(1)
-			default_size_hint: 1, None
-			spacing: '1dp'
+        bar_color: 0.15, 0.3, 0.6, 1
+        bar_inactive_color: 0.15, 0.3, 0.6, 0.4
+        bar_width: dp(10)
+        viewclass: 'RV_Label'
+        data: []
+        canvas.before:
+            Color:
+                rgba: 0.06, 0.06, 0.08, 1
+            Rectangle:
+                size: self.size
+                pos: self.pos
+        RecycleBoxLayout22:
+            id: rv_box
+            orientation: 'vertical'
+            size_hint: None, None
+            height: self.minimum_height
+            width: self.parent.width
+            default_size: None, cm(1)
+            default_size_hint: 1, None
+            spacing: '1dp'
 
     BoxLayout:
         size_hint: 1, None
